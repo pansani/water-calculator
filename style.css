@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9DEBF2;
+}
+.title{
+    width: 305px;
+    height: 49px;
+}
+img{
+    position: absolute;
+    top: 8px;
+}
+h1{
+    display: inline-block;
+    margin: 10px 0px 0px 47px;
+    font-family: 'Roboto Slab', serif;
+}
+.containerForm{
+    width: 480px;
+    height: 550px;
+    background-color: #51BAEF;
+    margin: 20px 0px 0px 20px;
+    position: absolute;
+}
+.formTitle{
+    width: 360px;
+    height: 68px;
+    font-family: OpenSans-Regular;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #544242;
+    margin-left: 55px;
+}
+.formDescription{
+    margin-left: 85px;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+input{
+    width: 278px;
+    height: 40px;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding: 1px 6px 1px 11px;
+    margin-left: 85px;
+    display: block;
+}
+.mb{
+    margin-bottom: 50px;
+}
+button{
+    width: 280px;
+    height: 40px;
+    border: none;
+    margin: 25px 0px 0px 85px;
+    background-color: #000;
+    color: #FFF;
+}
+#result{
+    display: none;
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 200px;
+    margin: 200px 0px 0px 650px;
+}
+.title-result{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resultP{
+    width: 271px;
+    height: 31px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+@media screen and (max-width:500px){
+
+}

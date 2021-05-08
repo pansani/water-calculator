@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo-water.calc.png">
+    <title>Water Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="./assets/logo-water.calc.png" alt="Water logo">
+            <h1>Water Calculator</h1>   
+        </div>
+        <div class="containerForm">
+            <h3 class="formTitle">
+                Fill the form with the requested data:
+            </h3>
+            <p class="formDescription">Your weight:</p>
+            <input type="number" name="weight" id="weight" class="mb" placeholder="Weight (Kg)">
+            <p class="formDescription">Your Age:</p>
+            <input type="number" name="age" id="age" class="mb" placeholder="Age">
+            <p class="formDescription">The time you wake up:</p>
+            <input type="number" name="wakeUp" id="wakeUp" placeholder="Hour (24h)" min="0" class="mb">
+            <p class="formDescription">What time are you going to sleep:</p>
+            <input type="number" name="sleep" id="sleep" placeholder="Hour (24h)">
+            <button type="button" onclick="calculate()" >CALCULATE</button>
+        </div>
+        <div id="result">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
