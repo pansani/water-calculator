@@ -1,6 +1,8 @@
 //35 ml per kg
 //up to 17 years = 40ml * weight
-//18 years - 55 years 
+//18 years - 55 years = 35 ml
+//55 years - 66 years = 30 ml
+//+= 66 years = 25 ml
 
 let inputWeight = document.getElementById("weight");
 let inputAge = document.getElementById("age");
@@ -22,10 +24,10 @@ function calculate(){
         if(age <= 17){
             return 40
         }
-        else if(18 < age && age < 55){
+        else if(18 <= age && age < 55){
             return 35
         }
-        else if(66 > age && age > 55){
+        else if(66 > age && age >= 55){
             return 30
         }
         else if(age >= 66){
