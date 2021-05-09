@@ -18,9 +18,8 @@ function calculate(){
     let age = inputAge.value;
     let wakeUp = inputWakeUp.value;
     let sleep = inputSleep.value;
-    let ml = ageML();
 
-     function ageML(){
+    function ageML(){
         if(age <= 17){
             return 40
         }
@@ -33,18 +32,21 @@ function calculate(){
         else if(age >= 66){
             return 25
         }  
+    }
 
     function timeTotal(){
-        if(wakeUp > sleep){
-            return (sleep - wakeUp)
+        if(wakeUp < sleep){
+            return sleep - wakeUp
         }
-        else if(sleep > wakeUp){
-            return (wakeUp - sleep)
+        else if(wakeUp > sleep){
+            return 24 - (wakeUp - sleep) 
         }
     }
 
-    let mlDay = weight * ageML();
-    let mlHour = weight * ageML() / timeTotal();
+    let ml = ageML();
+
+    let mlDay = weight * ml;
+    let mlHour = mlDay / timeTotal();
 
     result.style.display = 'block'
 
