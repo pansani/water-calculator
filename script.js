@@ -12,26 +12,25 @@ let result = document.getElementById("result")
 
 function calculate(){
     console.log("Calculating...")
-    let ml = 40;
     let weight = inputWeight.value;
     let age = inputAge.value;
     let wakeUp = inputWakeUp.value;
     let sleep = inputSleep.value;
+    let ml = ageML();
 
-    function ageML(age){
+     function ageML(){
         if(age <= 17){
-            return ml
+            return 40
         }
-        else if(age >= 18){
-            return ml = 35
+        else if(18 < age && age < 55){
+            return 35
         }
-        else if(age >= 55){
-            return ml = 30
+        else if(66 > age && age > 55){
+            return 30
         }
-        else{
-            return ml = 25
-        }       
-    }
+        else if(age >= 66){
+            return 25
+        }  
 
     function timeTotal(){
         if(wakeUp > sleep){
@@ -42,8 +41,8 @@ function calculate(){
         }
     }
 
-    let mlDay = weight * ageML(age)
-    let mlHour = weight * ageML(age) / timeTotal();
+    let mlDay = weight * ageML();
+    let mlHour = weight * ageML() / timeTotal();
 
     result.style.display = 'block'
 
