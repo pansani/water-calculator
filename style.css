@@ -91,5 +91,54 @@ button{
     margin-left: 10px;
 }
 @media screen and (max-width:500px){
-
+    .containerForm{
+        max-width: 300px;
+        max-height: 470px;
+        margin-right: 50px;
+        margin-left: 40px;
+    }
+    .formTitle{
+        width: 200px;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+    .formDescription{
+        margin-left: 15px;
+        font-size: 15px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 250px;
+        height: 40px;
+        font-family: OpenSans-Light;
+        font-size: 14px;
+        color: #434343;
+        background-color: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        border-radius: 0px;
+        padding: 1px 6px 1px 11px;
+        margin-left: 15px;
+        display: block;
+    }
+    .mb{
+        margin-bottom: 10px;
+    }
+    button{
+        width: 260px;
+        height: 40px;
+        border: none;
+        margin: 15px 0px 0px 15px;
+        background-color: #000;
+        color: #FFF;
+    }
+    #result{
+        display: none;
+        background-color: #F2F2F2;
+        max-width: 300px;
+        max-height: 200px;
+        margin: 520px 0px 0px 40px;
+    }
 }
