@@ -67,6 +67,7 @@ button{
     margin: 25px 0px 0px 85px;
     background-color: #000;
     color: #FFF;
+    cursor: pointer;
 }
 #result{
     display: none;
