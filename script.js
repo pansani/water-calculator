@@ -44,9 +44,10 @@ function calculate(){
     }
 
     let ml = ageML();
+    let time = timeTotal();
 
     let mlDay = weight * ml;
-    let mlHour = mlDay / timeTotal();
+    let mlHour = mlDay / time;
 
     result.style.display = 'block'
 
