@@ -83,8 +83,8 @@ button{
     margin-bottom: 30px;
 }
 .resultP{
-    width: 270px;
-    height: 30px;
+    width: 271px;
+    height: 31px;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: #000;
@@ -92,11 +92,15 @@ button{
     margin-left: 10px;
 }
 @media screen and (max-width:500px){
+    .title{
+        width: 200px;
+        height: 40px;
+    }
     .containerForm{
-        max-width: 300px;
-        max-height: 470px;
-        margin-right: 50px;
-        margin-left: 40px;
+        width: 300px;
+        height: 470px;
+        margin-left: 10px;
+        margin-top: 60px;
     }
     .formTitle{
         width: 200px;
@@ -140,6 +144,6 @@ button{
         background-color: #F2F2F2;
         max-width: 300px;
         max-height: 200px;
-        margin: 520px 0px 0px 40px;
+        margin: 560px 0px 0px 10px;
     }
 }
