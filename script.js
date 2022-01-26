@@ -39,7 +39,7 @@ function calculate(){
             return sleep - wakeUp
         }
         else if(wakeUp > sleep){
-            return 24 - (wakeUp - sleep) 
+            return - (wakeUp - sleep) 
         }
     }
 
